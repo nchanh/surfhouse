@@ -1,0 +1,171 @@
+.footer {
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 230, 230);
+}
+
+.footer__top {
+    background-color: 0;
+}
+
+.footer__middle {
+    background-color: #373737;
+    padding: 50px 0 40px 0;
+}
+
+.footer__bottom {
+    padding: 13px 0 0 0;
+    background-color: #333333;
+    box-shadow: 5px yellow;
+}
+
+.footer li {
+    font-size: 13px;
+}
+
+.footer__other h5 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.footer__other>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.2rem;
+}
+
+.footer__other>ul>li>a {
+    color: rgb(230, 230, 230);
+}
+
+.footer__newseletter {
+    line-height: 1.0em;
+}
+
+.footer__newseletter span {
+    font-size: 13px;
+}
+
+.footer__newseletter h5 {
+    padding: 0;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.footer__newseletter__button {
+    margin: 18px 0px 42px 0px;
+    padding: 0;
+}
+
+.footer__newseletter__button input[type=text] {
+    margin: 0;
+    padding: 8px 20px;
+    width: 65%;
+    margin-right: -5px;
+    background-color: yellow;
+    border: 0;
+    font-size: 14px;
+}
+
+.footer__newseletter__button input[type=button] {
+    padding: 8px 15px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer__newseletter__credit img {
+    padding: 3.5px
+}
+
+.footer__about-us {
+    line-height: 1.0em;
+}
+
+.footer__about-us h5 {
+    padding: 0;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.footer__about-us span {
+    font-size: 13px;
+    line-height: 1.1em;
+}
+
+.footer__about-us__contact {
+    margin: 11px 0;
+}
+
+.footer__about-us__contact span {
+    font-size: 16px !important;
+}
+
+.footer__about-us__contact__title {
+    padding-right: 15px;
+}
+
+.footer__about-us__contact__info-email {
+    color: yellow;
+}
+
+.footer__copyright {
+    font-size: 13px;
+    color: rgb(230, 230, 230);
+}
+
+.footer__linked {
+    text-align: right;
+    color: white;
+}
+
+.footer__linked ul li {
+    display: inline;
+    padding: 0 7px
+}
+
+.footer__header__social {
+    width: 100%;
+}
+
+.footer__header__social span {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 20%;
+    left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__header__social span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer__header__social span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__header__social span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer__header__social span {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer__header__social span {
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Raleway-Bold;
+    src: url("/lib/Raleway/Raleway-Bold.otf");
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url("/lib/Raleway/Raleway-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url("/lib/Raleway/Raleway-ExtraLight.otf");
+}
+
+@font-face {
+    font-family: Raleway-Heavy;
+    src: url("/lib/Raleway/Raleway-Heavy.otf");
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url("/lib/Raleway/Raleway-Light.otf");
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url("/lib/Raleway/Raleway-Medium.otf");
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("/lib/Raleway/Raleway-Regular.otf");
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url("/lib/Raleway/Raleway-SemiBold.otf");
+}
+
+@font-face {
+    font-family: Raleway-Thin;
+    src: url("/lib/Raleway/Raleway-Thin.otf");
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url("/lib/roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url("/lib/roboto/Roboto-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("/lib/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url("/lib/roboto/Roboto-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url("/lib/roboto/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-BoldItalic;
+    src: url("/lib/roboto/RobotoCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Italic;
+    src: url("/lib/roboto/RobotoCondensed-Italic.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Light;
+    src: url("/lib/roboto/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-LightItalic;
+    src: url("/lib/roboto/RobotoCondensed-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Regular;
+    src: url("/lib/roboto/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url("/lib/roboto/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("/lib/roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url("/lib/roboto/Roboto-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("/lib/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url("/lib/roboto/Roboto-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("/lib/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("/lib/roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url("/lib/roboto/Roboto-ThinItalic.ttf");
+}

@@ -1,0 +1,230 @@
+.section__aside__list-group {
+    margin-bottom: 25px;
+    width: 250px;
+}
+
+.section__aside__list-group a {
+    padding-left: 35px;
+    border: 0;
+}
+
+.section__aside__list-group-item__header {
+    color: white !important;
+    font-weight: bold;
+    background-color: #333333 !important;
+}
+
+.section__aside__list-group-item {
+    color: #333333;
+    font-weight: bold;
+    background-color: #26d2fc;
+}
+
+.section__aside__list-group-item:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+.section__aside__image {
+    margin-bottom: 25px;
+}
+
+.section__aside__image img {
+    width: 250px;
+}
+
+.section__aside__image span {
+    position: absolute;
+    font-weight: bold;
+    font-style: italic;
+    color: #333333;
+    font-size: 30px;
+    width: 100px;
+    height: 100%;
+    left: 120px;
+    padding-top: 75px;
+}
+
+.section__aside__tags {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.section__aside__tags h4 {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.section__aside__tags__items {
+    margin-bottom: 10px;
+}
+
+.section__aside__tags__items a {
+    background-color: #e9e9e9;
+    color: #333333;
+    padding: 5px 5px;
+    line-height: 2.5em;
+}
+
+.section__aside__tags__items a:hover {
+    text-decoration: none;
+    background-color: #faef03;
+}
+
+.section__aside__tags__items_custom1 {
+    background-color: #faef03 !important;
+    padding: 5px 25px !important;
+    font-weight: bold;
+}
+
+.section__aside__tags__items_custom1:hover {
+    text-decoration: none;
+    background-color: #e9e9e9 !important;
+}
+
+.section__aside__tags__items__custom2 {
+    padding: 5px 25px !important;
+    font-weight: bold;
+}
+
+.section__aside__tags__items__custom2:hover {
+    text-decoration: none;
+    background-color: #faef03;
+}
+
+.section__aside__tags__view-all-tags a {
+    color: #333333;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.section__aside__articles {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.section__aside__articles h4 {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.section__aside__articles__items {
+    margin-bottom: 10px;
+}
+
+.section__aside__articles__items a {
+    color: #333333;
+    padding: 10px 0;
+    line-height: 1.3em;
+    display: flex;
+    font-size: 14px;
+}
+
+.section__aside__articles__items a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section__aside__articles__view-all a {
+    color: #333333;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .section__aside__image {
+        display: none;
+    }
+    .section__aside__articles {
+        width: 100%;
+    }
+    .section__aside__tags {
+        width: 100%;
+    }
+    .section__aside__list-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section__aside__image span {
+        position: unset;
+    }
+    .section__aside__articles {
+        width: 100%;
+    }
+    .section__aside__tags {
+        width: 100%;
+    }
+    .section__aside__list-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .section__aside__image span {
+        position: unset;
+    }
+    .section__aside__articles {
+        width: 100%;
+    }
+    .section__aside__tags {
+        width: 100%;
+    }
+    .section__aside__list-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section__aside__image span {
+        position: absolute;
+    }
+    .section__aside__articles {
+        width: 100%;
+    }
+    .section__aside__tags {
+        width: 100%;
+    }
+    .section__aside__list-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section__aside__image span {
+        position: absolute;
+    }
+    .section__aside__articles {
+        width: 100%;
+    }
+    .section__aside__tags {
+        width: 100%;
+    }
+    .section__aside__list-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section__aside__image span {
+        position: absolute;
+    }
+    .section__aside__articles {
+        width: 250px;
+    }
+    .section__aside__tags {
+        width: 250px;
+    }
+    .section__aside__list-group {
+        width: 250px;
+    }
+}
