@@ -25,6 +25,18 @@
     padding: 0 7px
 }
 
+.top-bar__logo-linked__linked ul li:hover {
+    color: #333333;
+}
+
+.top-bar__logo-linked__linked ul li a {
+    color: white;
+}
+
+.top-bar__logo-linked__linked ul li a:hover {
+    color: #333333;
+}
+
 .top-bar__logo-linked__linked__dropdown {
     cursor: pointer;
 }
@@ -47,7 +59,7 @@
 }
 
 .top-bar__logo-linked__linked__dropdown-content ul li:hover {
-    color: blue;
+    color: #e24602;
 }
 
 .top-bar__content {
