@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Regular;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
 @font-face {
     font-family: Raleway-Bold;
     src: url("/lib/Raleway/Raleway-Bold.otf");

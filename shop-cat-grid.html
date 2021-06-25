@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop Cat Grid</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/shop-cat-grid.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar container-fluid">
+            <div class="top-bar__logo-linked">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <div class="top-bar__logo-linked__logo">
+                                <img src="images/icon/surfhouse logo.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="top-bar__logo-linked__linked">
+                                <ul>
+                                    <li><i class="fab fa-facebook-f" aria-hidden="true"></i></li>
+                                    <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+                                    <li><i class="fab fa-youtube" aria-hidden="true"></i></li>
+                                    <li><i class="fab fa-pinterest-p" aria-hidden="true"></i></li>
+                                    <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+                                    <li class="top-bar__logo-linked__linked__dropdown"> EN <i class="fas fa-caret-down"></i>
+                                        <div class="top-bar__logo-linked__linked__dropdown-content">
+                                            <ul>
+                                                <li>English</li>
+                                                <br />
+                                                <li>Vietnamese</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-bar__content">
+                <div class="container">
+                    <div class="row pl-3">
+                        <div class="col-5">
+                            <div class="row">
+                                <div class="top-bar__content__lw">
+                                    <button class="top-bar__content__lw__login">LOGIN</button>
+                                    <button class="top-bar__content__lw__wish-list">WISH LIST(o)</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="top-bar__content__shop-detail">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-3 col-md-3 col-sm-12 text-right">
+                                            <span class="top-bar__content__shop-detail__icon-shopping"><i
+                                                    class="fas fa-shopping-cart"></i></span>
+                                        </div>
+                                        <div class="col-12 col-lg-5 col-md-5 col-sm-12">
+                                            <div>
+                                                <span class="top-bar__content__shop-detail__span-money">$1,459.50</span>
+                                            </div>
+                                            <div>
+                                                <span class="top-bar__content__shop-detail__span-items">2 Items</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-lg-4 col-md-3 col-sm-12">
+                                            <button class="top-bar__content__shop-detail__btn-edit">
+                                                <div>
+                                                    <span
+                                                        class="top-bar__content__shop-detail__btn-edit__span-x">X</span>
+                                                </div>
+                                                <div>
+                                                    <span
+                                                        class="top-bar__content__shop-detail__btn-edit__span-edit">EDIT</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="top-bar__content__btn-vc">
+                                    <button class="top-bar__content__btn-vc__viewcart">VIEW CART</button>
+                                    <button class="top-bar__content__btn-vc__checkout">CHECKOUT</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-group top-bar__content__btn-search">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search    "></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-bar__slide ">
+                <div class="top-bar__slide__mySlides ">
+                    <img src="images/shop-cat-grid/bg.png " alt="slide " class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <div class="section__aside">
+                            <div class="row">
+                                <div class="col-12 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="list-group-flush section__aside__list-group">
+                                        <a href="#" class="list-group-item section__aside__list-group-item__header disabled">MENU</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">ABOUT</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">SURF APPAREL</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">KITESURF</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">ACCESSORIES</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">SALE</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">BRANDS</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">BLOG</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">GADGETS</a>
+                                        <a href="#" class="list-group-item section__aside__list-group-item">CANTACT</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="section__aside__tags">
+                                        <h4>Tags Widget</h4>
+                                        <div class="section__aside__tags__items">
+                                            <a href="" class="section__aside__tags__items_custom1">Kitesurf</a>
+                                            <a href="">Super</a><br />
+                                            <a href="">Duper</a>
+                                            <a href="">Theme</a><br />
+                                            <a href="">Men</a>
+                                            <a href="">Women</a>
+                                            <a href="">Equipment</a>
+                                            <a href="">Best</a>
+                                            <a href="">Accessories</a>
+                                            <a href="">Men</a>
+                                            <a href="" class="section__aside__tags__items__custom2">Apparel</a>
+                                            <a href="">Super</a><br />
+                                            <a href="">Duper</a>
+                                            <a href="">Theme</a>
+                                            <a href="">Responsiv</a>
+                                            <a href="">Men</a>
+                                            <a href="">Women</a>
+                                            <a href="">Equipment</a>
+                                        </div>
+                                        <div class="section__aside__tags__view-all-tags">
+                                            <a href="#">view all tags <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="section__aside__articles">
+                                        <h4>Articles Experts</h4>
+                                        <div class="section__aside__articles__items">
+                                            <a href="">LG Spectrum review</a>
+                                            <a href="">Verizon Droid Xyboard 8.2 and 10.1 review</a>
+                                            <a href="">Mac mini review (mid 2011)</a>
+                                            <a href="">Wacom lnkling review</a>
+                                            <a href="">Sonos Play:3 review</a>
+                                            <a href="">HTC Radar 4G review</a>
+                                            <a href="">Apple iMac</a>
+                                        </div>
+                                        <div class="section__aside__articles__view-all">
+                                            <a href="#">view all <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="section__aside__image">
+                                        <span>NOW IS OPEN!</span>
+                                        <img src="images/homes/aside1.png" alt="aside1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 col-md-12 col-sm-12">
+                        <div class="section__article">
+                            <div class="">
+                                <div class="section__article__header">
+                                    <div class="section__article__header__direct mb-4 mt-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <span>Home</span>
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <span>Apparel</span>
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <span>Woman</span>
+                                            </div>
+                                            <div class="col text-right">
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <span>Back to previous page</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section__article__header__sort mb-4">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort__sort-by">
+                                                    <span>SORT BY</span>
+                                                    <select name="" id="" class="mx-2">
+                                                        <option value="Position">Position</option>
+                                                        <option value="Position">ABC</option>
+                                                        <option value="Position">DSF</option>
+                                                    </select>
+                                                    <span>
+                                                        <i class="fas fa-long-arrow-alt-up">
+                                                            
+                                                        </i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort__view-as">
+                                                    <span>VIEW AS:</span>
+                                                    <button class="views-as__button-active mx-2"><i class="fas fa-th-large"></i></button>
+                                                    <button><i class="fas fa-th-list"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort__show">
+                                                    <span>SHOW</span>
+                                                    <select name="" id="" class="mx-2">
+                                                        <option value="1">1</option>
+                                                        <option value="5">5</option>
+                                                        <option value="7">7</option>
+                                                        <option value="9" selected>9</option>
+                                                    </select>
+                                                    <span>PER PAGE</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort-page">
+                                                    <span>PAGE:</span>
+                                                    <button class="sort-page__button__active"><span>1</span></button>
+                                                    <button><span>2</span></button>
+                                                    <button><span><i class="fas fa-chevron-right"></i></span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section__article__body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="section__article__products ">
+                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="section__article__products__name">
+                                                            <span>Single Thruster 2014</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <div class="section__article__products__price">
+                                                            <span>€.865.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="section__article__products__prd-new">
+                                                    <span>NEW</span>
+                                                </div> -->
+                                                <!-- <div class="section__article__products__prd-hot">
+                                                    <span>HOT</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section__article__footer">
+                                    <div class="section__article__header__sort mb-4">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort__sort-by">
+                                                    <span>SORT BY</span>
+                                                    <select name="" id="" class="mx-2">
+                                                        <option value="Position">Position</option>
+                                                        <option value="Position">ABC</option>
+                                                        <option value="Position">DSF</option>
+                                                    </select>
+                                                    <span>
+                                                        <i class="fas fa-long-arrow-alt-up">
+                                                            
+                                                        </i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort__view-as">
+                                                    <span>VIEW AS:</span>
+                                                    <button class="views-as__button-active mx-2"><i class="fas fa-th-large"></i></button>
+                                                    <button><i class="fas fa-th-list"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort__show">
+                                                    <span>SHOW</span>
+                                                    <select name="" id="" class="mx-2">
+                                                        <option value="1">1</option>
+                                                        <option value="5">5</option>
+                                                        <option value="7">7</option>
+                                                        <option value="9" selected>9</option>
+                                                    </select>
+                                                    <span>PER PAGE</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-12">
+                                                <div class="section__article__header__sort-page">
+                                                    <span>PAGE:</span>
+                                                    <button class="sort-page__button__active"><span>1</span></button>
+                                                    <button><span>2</span></button>
+                                                    <button><span><i class="fas fa-chevron-right"></i></span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid footer">
+            <div class="footer__header">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-4 p-0">
+                            <div class="footer__header__social">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <img src="images/footer/bg facebook.png" alt="bg-facebook" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="footer__header__social"><span><i class="fab fa-twitter"></i></span>
+                                <img src="images/footer/bg tw.png" alt="bg-twitter" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="footer__header__social">
+                                <span><i class="fab fa-pinterest"></i></span>
+                                <img src="images/footer/bg pint.png" alt="bg-pinterest" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__middle ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-12 ">
+                            <div class="footer__other ">
+                                <h5>Category</h5>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">about us</a></li>
+                                    <li><a href="">eshop</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">new collections</a></li>
+                                    <li><a href="">blog</a></li>
+                                    <li><a href="">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-12">
+                            <div class="footer__other">
+                                <h5>Our Account</h5>
+                                <ul>
+                                    <li><a href=" ">Your Account</a></li>
+                                    <li><a href=" ">Personal information</a></li>
+                                    <li><a href=" ">Addresses</a></li>
+                                    <li><a href=" ">Discount</a></li>
+                                    <li><a href=" ">Orders history</a></li>
+                                    <li><a href=" ">Addresses</a></li>
+                                    <li><a href=" ">Search Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-12 ">
+                            <div class="footer__other ">
+                                <h5>Our Support</h5>
+                                <ul>
+                                    <li><a href=" ">Site Map</a></li>
+                                    <li><a href=" ">Search Terms</a></li>
+                                    <li><a href=" ">Advanced Search</a></li>
+                                    <li><a href=" ">Mobile</a></li>
+                                    <li><a href=" ">Contact Us</a></li>
+                                    <li><a href=" ">Mobile</a></li>
+                                    <li><a href=" ">Addresses</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 col-sm-12 ">
+                            <div class="footer__newseletter ">
+                                <h5>Newsletter</h5>
+                                <span>Join thousand of other people sub-<br />scribe to our news</span>
+                                <div class="form-group ">
+                                    <div class="footer__newseletter__button">
+                                        <form action="" method="post">
+                                            <input type="text" name="name" id="name" placeholder="INSERT EMAIL">
+                                            <input type="button" value="SUBMIT"></input>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="footer__newseletter__credit ">
+                                        <img src="images/icon/aex.png " alt="aex " />
+                                        <img src="images/icon/mastercard.png " alt="mastercard " />
+                                        <img src="images/icon/maestero.png " alt="maestero " />
+                                        <img src="images/icon/visa_straight.png " alt="visa_straight " />
+                                        <img src="images/icon/discover.png " alt="discover " />
+                                        <img src="images/icon/paypal.png " alt="paypal " />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 col-sm-12 ">
+                            <div class="footer__about-us ">
+                                <h5>About Us</h5>
+                                <div class="col pl-0">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque quis
+                                    accusamus! Magnam voluptatem, voluptatibus architecto vitae velit omnis consequatur,
+                                    ad incidunt quidem reiciendis quae asperiores fugiat voluptate sint.
+                                    </span>
+                                </div>
+                                <div class="footer__about-us__contact ">
+                                    <span class="footer__about-us__contact__title ">Phone:</span> <span class="footer__about-us__contact__info-phone ">1-999-342-9876</span>
+                                </div>
+                                <div class="footer__about-us__contact ">
+                                    <span class="footer__about-us__contact__title ">e-mail:</span> <span class="footer__about-us__contact__info-email ">info@surfhouse.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+                            <div class="footer__copyright ">
+                                &copy; 2014 SURFHOUSE. All rights reserved - Designed by theucreativelab.com
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+                            <div class="footer__linked ">
+                                <ul>
+                                    <li><i class="fab fa-facebook-f "></i></li>
+                                    <li><i class="fab fa-twitter " aria-hidden="true "></i></li>
+                                    <li><i class="fab fa-pinterest " aria-hidden="true "></i></li>
+                                    <li><i class="fab fa-google-plus " aria-hidden="true "></i></li>
+                                    <li><i class="fab fa-tumblr " aria-hidden="true "></i></i>
+                                    </li>
+                                    <li><i class="fab fa-instagram " aria-hidden="true "></i></li>
+                                    <li><i class="fa fa-wifi " aria-hidden="true "></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
+    </script>
+</body>
+
+</html>

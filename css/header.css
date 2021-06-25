@@ -10,6 +10,11 @@
     width: 100%;
 }
 
+.top-bar__logo-linked__logo img {
+    width: 15%;
+    height: auto;
+}
+
 .top-bar__logo-linked__linked {
     text-align: right;
     color: white;
