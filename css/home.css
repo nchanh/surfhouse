@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    margin: 0;
-}
-
 body {
     background-color: #f8f8f8;
-    font-family: Roboto-Regular;
 }
 
 .section {
@@ -100,7 +94,7 @@ body {
 .section__article__products__prd-new span {
     position: absolute;
     top: -38px;
-    width: 100px;
+    /* width: 100px; */
     left: -24px;
     font-size: 9px;
     color: white;
@@ -119,7 +113,7 @@ body {
 .section__article__products__prd-hot span {
     position: absolute;
     top: -38px;
-    width: 100px;
+    /* width: 100px; */
     left: -24px;
     font-size: 9px;
     font-weight: bold;
