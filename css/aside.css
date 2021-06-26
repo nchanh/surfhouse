@@ -27,6 +27,19 @@
     text-decoration: none;
 }
 
+.section__aside__list-group-item-2 {
+    color: #333333;
+    font-weight: bold;
+    background-color: #81e6fe;
+}
+
+.section__aside__list-group-item-2:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #333333;
+    text-decoration: none;
+}
+
 .section__aside__image {
     margin-bottom: 25px;
 }
