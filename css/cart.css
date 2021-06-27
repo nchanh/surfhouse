@@ -68,10 +68,11 @@ body {
     width: 50px;
 }
 
-.section__acticle__body__product__table-product__price a {
-    padding-left: 10px;
+.section__acticle__body__product__table-product__price button {
     font-size: 20px;
     color: #ff0000;
+    border: 0;
+    background-color: unset;
 }
 
 .section__article__body__product__insert-code span {

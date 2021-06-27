@@ -122,9 +122,9 @@
                                     <div class="row mb-5">
                                         <div class="col-sm-12 col-md-8 col-lg-8 col-12">
                                             <div class="section__article__body__product">
-                                                <div class="row">
+                                                <div class="row" id="product_table">
                                                     <div class="section__article__body__product__table">
-                                                        <table class="table">
+                                                        <table class="table" id="product_table">
                                                             <thead>
                                                                 <tr>
                                                                     <th style="width: 50%;">PRODUCT NAME</th>
@@ -133,103 +133,13 @@
                                                                     <th px-0>SUBTOTAL</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-3 px-0">
-                                                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
-                                                                            </div>
-                                                                            <div class="col-9">
-                                                                                <div class="section__acticle__body__product__table-product__info">
-                                                                                    <div class="section__acticle__body__product__table-product__info__title">
-                                                                                        <span>Peeky cropped</span>
-                                                                                    </div>
-                                                                                    <div class="section__acticle__body__product__table-product__info__content mb-2">
-                                                                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta error, iste ex asperiores voluptatibus!</span>
-                                                                                    </div>
-                                                                                    <div class="section__article__body__product__table-product__info__linked">
-                                                                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                                                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                                                                        <a href=""><i class="fab fa-pinterest-p"></i></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="px-0">
-                                                                        <div class="section__acticle__body__product__table-product__price">
-                                                                            <span>€. 749,50</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="px-0">
-                                                                        <div class="section__acticle__body__product__table-product__quantity">
-                                                                            <input type="number" name="quantity" id="quantity" class="pl-1" value="1">
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="px-0">
-                                                                        <div class="section__acticle__body__product__table-product__price">
-                                                                            <div class="row">
-                                                                                <div class="col-8">
-                                                                                    <span>€. 749,50</span>
-                                                                                </div>
-                                                                                <div class="col-4 pl-0">
-                                                                                    <a href=""><i class="fas fa-times"></i></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-3 px-0">
-                                                                                <img src="images/homes/product.png" alt="product" class="img-fluid">
-                                                                            </div>
-                                                                            <div class="col-9">
-                                                                                <div class="section__acticle__body__product__table-product__info">
-                                                                                    <div class="section__acticle__body__product__table-product__info__title">
-                                                                                        <span>Peeky cropped</span>
-                                                                                    </div>
-                                                                                    <div class="section__acticle__body__product__table-product__info__content mb-2">
-                                                                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta error, iste ex asperiores voluptatibus!</span>
-                                                                                    </div>
-                                                                                    <div class="section__article__body__product__table-product__info__linked">
-                                                                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                                                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                                                                        <a href=""><i class="fab fa-pinterest-p"></i></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="px-0">
-                                                                        <div class="section__acticle__body__product__table-product__price">
-                                                                            <span>€. 749,50</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="px-0">
-                                                                        <div class="section__acticle__body__product__table-product__quantity">
-                                                                            <input type="number" name="quantity" id="quantity" class="pl-1" value="1">
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="px-0">
-                                                                        <div class="section__acticle__body__product__table-product__price">
-                                                                            <div class="row">
-                                                                                <div class="col-8">
-                                                                                    <span>€. 749,50</span>
-                                                                                </div>
-                                                                                <div class="col-4 pl-0">
-                                                                                    <a href=""><i class="fas fa-times"></i></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
+                                                            <tbody id="product_cart">
+
                                                             </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
+                                                <div id="product_table-error" class="mb-5"></div>
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="section__article__body__product__insert-code">
@@ -274,7 +184,7 @@
                                                         </div>
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-min">
-                                                                <span>€. 1,399.50</span>
+                                                                <span id="product__card__price-your-cart"></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -298,7 +208,7 @@
                                                         </div>
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-min">
-                                                                <span>€. 112.20</span>
+                                                                <span id="product__card__vat"></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -310,14 +220,14 @@
                                                         </div>
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-max">
-                                                                <span>€. 1,511.70</span>
+                                                                <span id="product__card__order-total"></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row text-center">
                                                         <div class="col">
                                                             <div class="section__article__body__cart__button">
-                                                                <button>CHECKOUT</button>
+                                                                <button onclick="location.href = '/checkout.html';">CHECKOUT</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -329,7 +239,7 @@
                                         <div class="section__article__body__header">
                                             <div class="col">
                                                 <div class="section__article__body__header__title">
-                                                    <span>TOP PRODUCTS</span>
+                                                    <span>YOU MIGHT ALSO LIKE</span>
                                                 </div>
                                             </div>
                                             <div class="col text-right">
@@ -402,7 +312,7 @@
                                         <div class="section__article__body__header">
                                             <div class="col">
                                                 <div class="section__article__body__header__title">
-                                                    <span>TOP PRODUCTS</span>
+                                                    <span>RECENTLY VIEWED</span>
                                                 </div>
                                             </div>
                                             <div class="col text-right">
@@ -495,6 +405,7 @@
 
     <!-- Script -->
     <script src="js/layout.js"></script>
+    <script src="js/service.js"></script>
 </body>
 
 </html>
