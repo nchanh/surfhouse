@@ -14,6 +14,10 @@ $(function() {
             showCart();
         }
 
+        if (window.location.href.indexOf("checkout") > -1) {
+            totalPrice();
+        }
+
     } else {
         $('#product_table').css("display", "none");
         $('#product_table-error').text('No Products.');

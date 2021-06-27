@@ -79,7 +79,7 @@ $.ajax({
         var body = '';
 
         $.each(data, function(index, product) {
-            if (index > 2) {
+            if (index < 3) {
                 var contentDiscount = '';
                 var contentNewProduct = '';
                 var contentHotProduct = '';

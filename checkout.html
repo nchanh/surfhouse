@@ -214,7 +214,7 @@
                                                         </div>
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-min">
-                                                                <span>€. 1,399.50</span>
+                                                                <span id="product__card__price-your-cart"></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -238,11 +238,11 @@
                                                         </div>
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-min">
-                                                                <span>€. 112.20</span>
+                                                                <span id="product__card__vat"></span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row mb-4">
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-max">
                                                                 <span>ORDER TOTAL</span>
@@ -250,14 +250,14 @@
                                                         </div>
                                                         <div class="col">
                                                             <div class="section__article__body__cart__span-max">
-                                                                <span>€. 1,511.70</span>
+                                                                <span id="product__card__order-total"></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row text-center">
                                                         <div class="col">
                                                             <div class="section__article__body__cart__button">
-                                                                <button>CHECKOUT</button>
+                                                                <button onclick="location.href = '/checkout.html';">CHECKOUT</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -305,14 +305,14 @@
                                                                 </div>
                                                                 <div class="form-group mb-4">
                                                                     <label for="">STATE / COUNTRY*</label>
-                                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                                    <select class="custom-select" name="country" id="country">
                                                                         <option selected>select</option>
                                                                         <option value="1">Vietnam</option>
                                                                       </select>
                                                                 </div>
                                                                 <div class="form-group mb-4">
                                                                     <label for="">PROVINCE*</label>
-                                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                                    <select class="custom-select" name="provice" id="provice">
                                                                         <option selected>select</option>
                                                                         <option value="1">Da Nang City</option>
                                                                         <option value="2">Ho Chi Minh City</option>
@@ -469,91 +469,8 @@
 
     <!-- Script -->
     <script src="js/layout.js"></script>
-
-    <script>
-        $('#login').validate({
-            rules: {
-                emailAddress: "required",
-                password: {
-                    required: true,
-                    minlength: 5
-                }
-            },
-            messages: {
-                emailAddress: "Please enter your email address",
-                password: {
-                    required: "Please provide a password",
-                    minlength: "Your password must be at least 5 characters long"
-                }
-            },
-
-            submitHandler: function(form) {
-                form.submit();
-            }
-        });
-
-        $('#order').validate({
-            rules: {
-                email: {
-                    required: true,
-                    email: true
-                },
-                fname: "required",
-                sname: "required",
-                address1: "required",
-                postalCode: {
-                    required: true,
-                    number: true
-                },
-                city: "required",
-                phone: "required",
-                phone: {
-                    required: true,
-                    number: true
-                },
-                creditCard: {
-                    required: true,
-                    number: true
-                },
-                secureCode: {
-                    required: true,
-                    number: true
-                },
-                nameCard: "required"
-            },
-            messages: {
-                email: {
-                    required: "Please enter your email",
-                    email: "Please enter a valid email"
-                },
-                fname: "Please enter your first name",
-                sname: "Please enter your email surname",
-                address1: "Please enter your address",
-                postalCode: {
-                    required: "Please enter your postal code",
-                    number: "Please enter a valid number"
-                },
-                city: "Please enter your town/city",
-                phone: {
-                    required: "Please enter your phone",
-                    number: "Please enter a valid number"
-                },
-                secureCode: {
-                    required: "Please enter your secure code",
-                    number: "Please enter a number"
-                },
-                creditCard: {
-                    required: "Please enter your credit card",
-                    number: "Please enter a valid number"
-                },
-                nameCard: "Please enter your name on card"
-            },
-
-            submitHandler: function(form) {
-
-            }
-        });
-    </script>
+    <script src="js/service.js"></script>
+    <script src="js/validate-checkout.js"></script>
 </body>
 
 </html>
