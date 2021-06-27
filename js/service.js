@@ -31,7 +31,7 @@ $(function() {
 // Event click add to card
 function addToCard(id, title, price, image) {
 
-    alert('add 1');
+    $('#liveToast').toast('show')
 
     // Find Product and add quantity
     for (var i in products) {
@@ -121,7 +121,7 @@ function showProductToTable() {
         subTotal = '€.' + (subTotal).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 
         content += '' +
-            '<tr>' +
+            '<tr class="section__article__body__product__table__tr" onclick="location.href = \'/checkout.html\';">' +
             '    <td>' +
             '        <div class="row">' +
             '            <div class="col-3 px-0"><img src="images/product/' + products[i].Image + '" alt="' + products[i].Image + '" class="img-fluid" style="height: 70px !important"></div>' +
