@@ -39,7 +39,7 @@ $.ajax({
 
             body += '' +
                 '<div class="col-12 col-lg-4 col-md-6 col-sm-12">' +
-                '   <div class="section__article__products ">' +
+                '   <div class="section__article__products" onclick="addToCard(\'' + product.id + '\',\'' + product.title + '\',\'' + product.price + '\')">' +
                 '       <img src="images/product/' + product.image + '" alt="' + product.title + '" class="img-fluid">' +
                 '       <div class="row">' +
                 '           <div class="col-7 pr-0">' +
@@ -63,6 +63,9 @@ $.ajax({
 
         $('#new-products').html(body);
 
+    },
+    error: function(error) {
+        console.log("Error: " + error);
     }
 });
 
@@ -107,7 +110,7 @@ $.ajax({
 
                 body += '' +
                     '<div class="col-12 col-lg-4 col-md-6 col-sm-12">' +
-                    '   <div class="section__article__products ">' +
+                    '   <div class="section__article__products" onclick="addToCard(\'' + product.id + '\',\'' + product.title + '\',\'' + product.price + '\')">' +
                     '       <img src="images/product/' + product.image + '" alt="' + product.title + '" class="img-fluid">' +
                     '       <div class="row">' +
                     '           <div class="col-7 pr-0">' +
@@ -131,6 +134,9 @@ $.ajax({
 
         $('#top-products').html(body);
 
+    },
+    error: function(error) {
+        console.log("Error: " + error);
     }
 });
 
@@ -175,7 +181,7 @@ $.ajax({
 
                 body += '' +
                     '<div class="col-12 col-lg-4 col-md-6 col-sm-12">' +
-                    '   <div class="section__article__products ">' +
+                    '   <div class="section__article__products" onclick="addToCard(\'' + product.id + '\',\'' + product.title + '\',\'' + product.price + '\')">' +
                     '       <img src="images/product/' + product.image + '" alt="' + product.title + '" class="img-fluid">' +
                     '       <div class="row">' +
                     '           <div class="col-7 pr-0">' +
@@ -199,5 +205,8 @@ $.ajax({
 
         $('#sale-products').html(body);
 
+    },
+    error: function(error) {
+        console.log("Error: " + error);
     }
 });

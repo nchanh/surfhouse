@@ -1,4 +1,5 @@
 [{
+        "id": 1,
         "title": "Single Thruster 2014",
         "price": 865.00,
         "discount": 0,
@@ -7,6 +8,7 @@
         "hot_product": false
     },
     {
+        "id": 2,
         "title": "Freestyle Wave FSW",
         "price": 770.50,
         "discount": 1270.15,
@@ -15,6 +17,7 @@
         "hot_product": true
     },
     {
+        "id": 3,
         "title": "The White Collection SURFBOARD 2014",
         "price": 1570.70,
         "discount": 0,
@@ -23,6 +26,7 @@
         "hot_product": false
     },
     {
+        "id": 4,
         "title": "OG SCALLOP SOLD",
         "price": 765.00,
         "discount": 0,
@@ -31,6 +35,7 @@
         "hot_product": false
     },
     {
+        "id": 5,
         "title": "CYPHER HEAT VES M",
         "price": 849.95,
         "discount": 0,
@@ -39,6 +44,7 @@
         "hot_product": false
     },
     {
+        "id": 6,
         "title": "SYNCRO WOMENS QS MEN",
         "price": 1110.99,
         "discount": 0,
