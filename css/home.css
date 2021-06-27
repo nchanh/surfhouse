@@ -59,6 +59,7 @@ body {
 
 .section__article__products img {
     margin-bottom: 15px;
+    height: 235px !important;
 }
 
 .section__article__products__name span {

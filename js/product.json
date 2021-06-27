@@ -1,0 +1,49 @@
+[{
+        "title": "Single Thruster 2014",
+        "price": 865.00,
+        "discount": 0,
+        "image": "singlethruster2014.png",
+        "new_product": true,
+        "hot_product": false
+    },
+    {
+        "title": "Freestyle Wave FSW",
+        "price": 770.50,
+        "discount": 1270.15,
+        "image": "4514_0.jpg",
+        "new_product": false,
+        "hot_product": true
+    },
+    {
+        "title": "The White Collection SURFBOARD 2014",
+        "price": 1570.70,
+        "discount": 0,
+        "image": "bic-surf-14-7-9-natural-surf-2-wahine-cutout-zoom.jpg",
+        "new_product": false,
+        "hot_product": false
+    },
+    {
+        "title": "OG SCALLOP SOLD",
+        "price": 765.00,
+        "discount": 0,
+        "image": "101437_ogscallop,f_blk_frt1.jpg",
+        "new_product": false,
+        "hot_product": false
+    },
+    {
+        "title": "CYPHER HEAT VES M",
+        "price": 849.95,
+        "discount": 0,
+        "image": "quiksilver-cypher-ps-heated-vest-.jpg",
+        "new_product": false,
+        "hot_product": false
+    },
+    {
+        "title": "SYNCRO WOMENS QS MEN",
+        "price": 1110.99,
+        "discount": 0,
+        "image": "shonanmart_qsflr_1.jpg",
+        "new_product": false,
+        "hot_product": false
+    }
+]
