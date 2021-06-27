@@ -43,6 +43,10 @@ body {
     color: #333333;
 }
 
+.section__article__body__product__table__tr:hover {
+    cursor: pointer;
+}
+
 .section__acticle__body__product__table-product__info {
     line-height: 16px;
 }
@@ -73,6 +77,10 @@ body {
     color: #ff0000;
     border: 0;
     background-color: unset;
+}
+
+.section__acticle__body__product__table-product__price button:hover {
+    color: black;
 }
 
 .section__article__body__product__insert-code span {
