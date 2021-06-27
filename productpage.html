@@ -134,7 +134,7 @@
                                                     <div class="row mb-5">
                                                         <div class="col">
                                                             <div class="section__article__body__product-detail__image">
-                                                                <img src="images/product-page/bg.png" alt="bg" class="img-fluid">
+                                                                <img src="images/product-page/bg.png" alt="product" id="product-detail-image" class="img-fluid" style="height: 339px;">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -142,8 +142,8 @@
                                                         <div class="col">
                                                             <div class="section__article__body__product-detail__slide">
                                                                 <span><</span>
-                                                                <img src="images/product-page/thumb -mask.png" alt="mask">
                                                                 <img src="images/product-page/thumb -mask-2.png" alt="mask">
+                                                                <img src="images/product-page/thumb -mask.png" alt="mask">
                                                                 <img src="images/product-page/thumb -mask-3.png" alt="mask">
                                                                 <span>></span>
                                                             </div>
@@ -155,7 +155,7 @@
                                                         <div class="col">
                                                             <div class="section__article__body__product-detail__title pl-3">
                                                                 <div class="row">
-                                                                    <h4>PEEKY CROPPED</h4>
+                                                                    <h4 id="product-detail-title"></h4>
                                                                 </div>
                                                                 <div class="row mb-4">
                                                                     <div class="section__article__body__product-detail__title__star mr-2">
@@ -175,7 +175,10 @@
                                                             <div class="section__article__body__product-detail__price">
                                                                 <div class="row">
                                                                     <div class="col">
-                                                                        <h3>€. 578.50</h3>
+                                                                        <div class="form-inline">
+                                                                            <h3>€.</h3>
+                                                                            <h3 id="product-detail-price"></h3>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="col">
                                                                         <div>
@@ -243,7 +246,7 @@
                                                                         <div class="section__article__body__product-detail__quantity__quantity-form">
                                                                             <div class="row">
                                                                                 <div class="col pr-2">
-                                                                                    <input class="form-control quantity" min="0" name="quantity" value="1" type="number">
+                                                                                    <input class="form-control quantity" min="1" max="100" name="quantity" id="product-detail-quantity" value="1" type="number">
                                                                                 </div>
                                                                                 <div class="col pl-0">
                                                                                     <button id="btn-plus">+</button>
@@ -254,7 +257,7 @@
                                                                     </div>
                                                                     <div class="col-4">
                                                                         <div class="section__article__body__product-detail__quantity__button">
-                                                                            <button>ADD TO CART</button>
+                                                                            <button onclick="addToCardInProductDetail()">ADD TO CART</button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-5">
@@ -471,6 +474,21 @@
         <div id="footer"> </div>
     </footer>
 
+    <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+            <div class="toast-header">
+                <i class="far fa-check-circle text-success mr-2"></i>
+                <strong class="mr-auto">Notification</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="toast-body">
+                The product has been added to cart.
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "> -->
@@ -483,6 +501,7 @@
 
     <!-- Script -->
     <script src="js/layout.js"></script>
+    <script src="js/service.js"></script>
     <script>
         $('#btn-plus').on('click', function(e) {
             const input = $(e.target).closest('.section__article__body__product-detail__quantity__quantity-form').find('input');

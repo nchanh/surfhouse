@@ -18,6 +18,12 @@ $(function() {
             totalPrice();
         }
 
+        if (window.location.href.indexOf("productpage") > -1) {
+            var url = new URL(window.location.href);
+            var product_id = url.searchParams.get("pid");
+            getProductById(product_id);
+        }
+
     } else {
         $('#product_table').css("display", "none");
         $('#product_table-error').text('No Products.');
@@ -121,8 +127,8 @@ function showProductToTable() {
         subTotal = '€.' + (subTotal).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 
         content += '' +
-            '<tr class="section__article__body__product__table__tr" onclick="location.href = \'/checkout.html\';">' +
-            '    <td>' +
+            '<tr>' +
+            '    <td class="section__article__body__product__table__tr" onclick="location.href = \'/productpage.html?pid=' + products[i].Id + '\';">' +
             '        <div class="row">' +
             '            <div class="col-3 px-0"><img src="images/product/' + products[i].Image + '" alt="' + products[i].Image + '" class="img-fluid" style="height: 70px !important"></div>' +
             '            <div class="col-9">' +
@@ -152,7 +158,7 @@ function showProductToTable() {
             '       <div class="section__acticle__body__product__table-product__price">' +
             '           <div class="row">' +
             '               <div class="col-8"><span>' + subTotal + '</span></div>' +
-            '               <div class="col-4 pl-0"><button onclick="deleteById(' + products[i].Id + ')"><i class="fas fa-times"></i></button></div>' +
+            '               <div class="col-4 pl-0"><button onclick="deleteById(' + products[i].Id + ')" title="Delete"><i class="fas fa-times"></i></button></div>' +
             '               </div>' +
             '           </div>' +
             '   </td>' +
@@ -184,4 +190,44 @@ function totalPrice() {
     $('#product__card__price-your-cart').html(priceYourCart);
     $('#product__card__vat').html(vat);
     $('#product__card__order-total').html(orderTotal);
+}
+
+
+// Get Product By Id
+function getProductById(id) {
+    for (var i in products) {
+        if (products[i].Id == id) {
+            $('#product-detail-image').attr('src', 'images/product/' + products[i].Image);
+            $('#product-detail-title').html(products[i].Title);
+            $('#product-detail-price').html((parseFloat(products[i].Price)).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));
+            $("#product-detail-quantity").val(products[i].Quantity);
+        }
+    }
+}
+
+//
+function addToCardInProductDetail() {
+    var url = new URL(window.location.href);
+    var product_id = url.searchParams.get("pid");
+    if (product_id != 0) {
+        $('#liveToast').toast('show')
+
+        // Find Product and add quantity
+        for (var i in products) {
+            if (products[i].Id == product_id) {
+                products[i].Quantity += $('#product-detail-quantity').val();
+
+                saveCart();
+                return;
+            }
+        }
+
+        // Create new item products
+        var title = $('#product-detail-title').text();
+        var price = $('#product-detail-price').text();
+        var image = $('#product-detail-image').attr('src').replace('images/product/', '');
+        var item = { Id: product_id, Title: title, Price: price, Image: image, Quantity: 1 };
+        products.push(item);
+        saveCart();
+    }
 }
